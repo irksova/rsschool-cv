@@ -1,3 +1,4 @@
+![Image](https://avatars.githubusercontent.com/u/105944336?v=4)
 # Serebrennikova Irina
 ### *Junior Frontend Developer*  
 
