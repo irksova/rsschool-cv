@@ -52,3 +52,30 @@ Tomsk State University of Control Systems and Radioelectronics
 *Sep 2012 - Jun 2016*  
 
 ---
+
+### Code example:
+**Script for showing random block on Tilda**
+```
+<script>
+$(document).ready(
+function(){
+    $('#rec375605562, #rec376123622, #rec376123663, #rec376123687, #rec376123698,').addClass('chooseblk').hide();
+
+function getRandomInt(max) { 
+    return Math.floor(Math.random() * Math.floor(max)); 
+};
+
+function showRandomBlock(){
+    let blkSts = getRandomInt($('.chooseblk').length);
+    $('.chooseblk').hide();
+    $('.chooseblk:eq('+blkSts+')').slideToggle(0); t_lazyload_update(); 
+};
+
+$("[href='#prediction']").click(function(e) {
+    e.preventDefault();
+    showRandomBlock()});
+});
+</script>
+```
+---
+### Thank you for watching!  
