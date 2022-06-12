@@ -1,1 +1,31 @@
-/* Начало файла */
+body {
+    display: flex;
+    background-color: #ffffff;
+}
+
+.main-page {
+    width: 1024px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f8f8f8;
+    box-shadow: 10px 10px 30px -1px #ebebeb ;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    background-color: #3c3c3c;
+    font-weight: 600;
+    
+}
+
+footer p {
+    color: #f8f8f8;
+    margin: 10px;
+}
+
+.my-github {
+    display: flex;
+    align-items: center;
+}
