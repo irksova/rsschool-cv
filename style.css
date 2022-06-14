@@ -1,1 +1,232 @@
-/* Начало файла */
+
+
+/*Вся страница*/
+body {
+    box-sizing: border-box;
+    background-color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-size:2rem;
+    font-weight: 800;
+    font-style: normal;
+    color:#eed6e6;
+    text-shadow: 
+		-0   -1px 0   #000000,
+		 0   -1px 0   #000000,
+		-0    1px 0   #000000,
+		 0    1px 0   #000000,
+		-1px -0   0   #000000,
+		 1px -0   0   #000000,
+		-1px  0   0   #000000,
+		 1px  0   0   #000000,
+		-1px -1px 0   #000000,
+		 1px -1px 0   #000000,
+		-1px  1px 0   #000000,
+		 1px  1px 0   #000000,
+		-1px -1px 0   #000000,
+		 1px -1px 0   #000000,
+		-1px  1px 0   #000000,
+		 1px  1px 0   #000000;
+}
+
+h2 {
+    font-size:1.5rem;
+    font-weight: 600;
+    font-style: normal;
+    color: #0a0a0a;
+    margin-top: 60px;
+    background: linear-gradient(to right, #eed7e6a9, #f8f8f8);
+}
+
+.left-side h2 {
+    background: linear-gradient(to right, #f8f8f8, #eed7e6a9,  #f8f8f8);
+}
+
+h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-style: normal;
+    color: #3c3c3c;
+    margin-top: 30px;
+}
+
+a:link {
+    text-decoration:underline;
+    color: #000000;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #000000;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #f4afdd;
+}
+
+a:active {
+    text-decoration: underline;
+    color: #000000;
+}
+
+p {
+    font-weight: 200;
+    font-style: normal;
+    color: #000000;
+}
+
+
+ul {
+    padding-inline-start: 0px;
+    text-align: left;
+    list-style-type: none;
+    color: #6f6f6f;
+}
+
+li {
+    margin-top: 10px;
+}
+
+li::marker {
+    list-style-position:inside;
+    color: #eed6e6;
+    border-color: #3c3c3c;
+    font-size:x-large;
+}
+
+b {
+    font-weight: 500;
+    color: #3c3c3c;
+}
+
+.comment {
+    font-size: small;
+}
+
+hr {
+    border: none;
+    color: #cdcdcd;
+    background-color: #cdcdcd;
+    height: 1px;
+}
+
+.progress-star-right {
+    text-align: right;
+}
+
+/*Инфо+футер*/
+.container {
+    margin: 20px auto;
+    width: 90vw;
+    background-color: #f8f8f8;
+    box-shadow: 0px 0px 40px 5px #ebebeb ;
+}
+
+/*Только инфо*/
+main {
+    display:flex;
+    flex-wrap: wrap;
+    bottom: 5%;
+}
+
+.info-left-side {
+    padding-bottom: 90px;
+}
+
+
+.left-side {
+    width: 35%;
+    height: auto;
+    float: left;
+    box-shadow: 20px -30px 40px 0px #f1f1f1 ;
+}
+
+.contacts, .skills, .languages {
+    text-align: center;
+    margin-top: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+.right-side {
+    width: 65%;
+    height: auto;
+    float: right;
+    text-align: left;
+}
+
+.right-side p {
+    margin-left: 30px;
+}
+
+.dotted-list {
+    margin-left: 30px;
+    list-style-type: disc;
+}
+
+
+.about, .work, .education, .code, .project {
+    margin: 60px;
+}
+
+
+header {
+    display:block;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    text-align: center;
+}
+
+header img {
+    width: 200px;
+    border-radius: 100%;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+    background-color: #3c3c3c;
+    font-weight: 600;
+}
+
+footer a {
+    color: #f8f8f8;
+}
+
+footer p {
+    color: #f8f8f8;
+}
+
+.img-vs-label {
+    display: flex;
+    align-items: center;
+}
+
+.img-vs-label p {
+    margin: 5px;
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 980px) {
+    .info {
+      display: block;
+    }
+    .left-side{
+      margin: 0 auto;  
+      margin-bottom:10px;
+      width: 100%;
+    }
+    .right-side {
+        margin: 0 auto;  
+        margin-bottom:10px;
+        width: 100%;
+    }
+  }
