@@ -35,6 +35,7 @@ h2 {
     font-size:1.5rem;
     font-weight: 600;
     font-style: normal;
+    letter-spacing: 2px;
     color: #0a0a0a;
     margin-top: 60px;
     background: linear-gradient(to right, #eed7e6a9, #f8f8f8);
@@ -46,7 +47,7 @@ h2 {
 
 h3 {
     font-size: 1.2rem;
-    font-weight: 600;
+    font-weight: 500;
     font-style: normal;
     color: #3c3c3c;
     margin-top: 30px;
@@ -86,20 +87,17 @@ ul {
     color: #6f6f6f;
 }
 
-li {
-    margin-top: 10px;
-}
+
 
 li::marker {
     list-style-position:inside;
     color: #eed6e6;
-    border-color: #3c3c3c;
     font-size:x-large;
 }
 
 b {
-    font-weight: 500;
-    color: #3c3c3c;
+    font-weight: 400;
+    color: #000000;
 }
 
 .comment {
@@ -146,6 +144,7 @@ main {
 
 .contacts, .skills, .languages {
     text-align: center;
+    margin: 30px;
     margin-top: 60px;
     padding-left: 30px;
     padding-right: 30px;
@@ -166,6 +165,8 @@ main {
 .dotted-list {
     margin-left: 30px;
     list-style-type: disc;
+    color: #0a0a0a;
+    font-weight: 200;
 }
 
 
@@ -173,6 +174,20 @@ main {
     margin: 60px;
 }
 
+.about p {
+    margin-left: 0px;
+}
+
+.navigation-menu {
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: small;
+    text-align: right;
+}
 
 header {
     display:block;
@@ -215,6 +230,15 @@ footer p {
     margin-left: 10px;
 }
 
+.code-block {
+    padding-left: 30px;
+    padding-left: 30px;
+    overflow: auto; 
+    width: 95%; 
+    height: 300px; 
+    background-color: #ffffff;
+}
+
 @media screen and (max-width: 980px) {
     .info {
       display: block;
@@ -228,5 +252,12 @@ footer p {
         margin: 0 auto;  
         margin-bottom:10px;
         width: 100%;
+    }
+    h1 {
+        font-size: 1.8rem;
+    }
+    .right-side h2 {
+        text-align: center;
+        background: linear-gradient(to right, #f8f8f8, #eed7e6a9,  #f8f8f8);
     }
   }
